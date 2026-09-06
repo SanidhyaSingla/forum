@@ -1,0 +1,25 @@
+body {
+	display: grid;
+	height: 100vh;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	grid-template-areas:
+		"header header"
+		"sidebar main";
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: auto 1fr;
+	overflow: hidden;
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+main {
+	min-width: 0;
+	grid-area: main;
+	overflow: auto;
+	padding: 24px;
+	box-sizing: border-box;
+}
