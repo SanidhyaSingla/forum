@@ -4,8 +4,30 @@
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Node.js](https://nodejs.org/) (v24+ recommended)
 - `npm`
+
+## Run Locally
+
+Clone the project & go to project directory
+
+```bash
+  git clone https://github.com/osdc/forum
+  cd forum
+```
+
+Install dependencies
+
+```bash
+  npm install 
+```
+
+Start [Vite](https://vite.dev/) server
+
+```bash
+  cd frontend
+  npm run dev
+```
 
 ## Frontend Linting
 

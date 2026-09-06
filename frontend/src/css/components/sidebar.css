@@ -9,7 +9,7 @@
 #sidebar {
 	display: flex;
 	flex-direction: column;
-	width: 13vw;
+	width: 200px;
 	height: 100%;
 	background-color: var(--bg-color, #ffffff);
 	border-right: 1px solid var(--border-color, #e5e7eb);
@@ -45,7 +45,6 @@ li.link {
 }
 
 #sidebar .link-text {
-	transition: display ease allow-discrete;
 	white-space: nowrap;
 }
 
