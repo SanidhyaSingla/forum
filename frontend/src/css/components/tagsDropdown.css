@@ -1,6 +1,7 @@
 :host {
 	display: inline-block;
 	font-family: system-ui, sans-serif;
+	grid-area: main;
 }
 
 .tags-toggle {
