@@ -32,26 +32,27 @@
 
         <!-- Load StyleSheets -->
         <link rel="stylesheet" href="src/css/base.css" />
+        <link rel="stylesheet" href="src/css/layout.css" />
 
         <!-- Load Components -->
         <script type="module" src="src/js/components/header.js"></script>
         <script type="module" src="src/js/components/tagsDropdown.js"></script>
+        <script type="module" src="src/js/components/sidebar.js"></script>
     </head>
     <body>
-        <site-header></site-header>
-        <main style="padding: 24px">
+        <x-header></x-header>
+        <x-sidebar></x-sidebar>
+        <main>
+            <tags-dropdown></tags-dropdown>
             <div
                 style="
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 24px;
                 "
             >
                 <h1>Welcome to OSDForum</h1>
-                <tags-dropdown></tags-dropdown>
             </div>
-
             <div id="posts-feed">
                 <p>Posts will load here based on the selected tag...</p>
             </div>

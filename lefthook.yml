@@ -29,11 +29,6 @@ post-merge:
       glob: "lefthook.yml"
       run: npx lefthook install
 
-    - name: install-root-deps
+    - name: install-deps
       glob: "package-lock.json"
-      run: npm ci
-
-    - name: install-frontend-deps
-      glob: "frontend/package-lock.json"
-      root: "frontend/"
       run: npm ci

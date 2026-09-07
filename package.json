@@ -2,9 +2,20 @@
   "name": "forum",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+      "prepare": "lefthook install"
+    },
+  "workspaces": [
+      "frontend"
+    ],
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^21.2.2",
     "lefthook": "^2.1.10"
+
+  },
+  "allowScripts": {
+    "lefthook@2.1.10": true,
+    "fsevents@2.3.3": true
   }
 }

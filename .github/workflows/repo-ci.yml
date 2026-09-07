@@ -39,7 +39,7 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
 
-      - name: Install root dependencies
+      - name: Install dependencies
         run: npm ci
 
       - name: Update git hooks

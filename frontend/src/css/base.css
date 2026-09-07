@@ -24,13 +24,8 @@
 	--svg-fill: #101012;
 }
 
-/* Global Page Styles */
-body {
-	background-color: var(--bg-color);
-	color: var(--text-color);
-	margin: 0;
-	font-family: system-ui, sans-serif;
-	transition:
-		background-color 0.2s ease,
-		color 0.2s ease;
+/* Cross Document View Transitions will be supported soon as of the Interop CSS for 2026.
+So firefox compatibility isn't an issue.*/
+@view-transition {
+	navigation: auto;
 }
